@@ -1,0 +1,81 @@
+@import './fonts.scss';
+
+.seccion3{
+    
+    .phone{
+        position: relative;
+        z-index: 10;
+        bottom:95.5px;
+        width: 319px;
+        height: 519px;
+        margin-bottom: -81.5px;
+        
+        img{
+            width: 100%;
+        }
+    
+    }
+    
+    
+    .contenedor{
+        padding:16px;
+        
+        h2{
+            @include titulos;
+            font-size: 36px;
+            color: #060A24;
+        }
+        p{
+            @include parrafos;
+            @extend h2;
+            color: #060A24;
+            
+           
+        }
+             
+        
+
+    }
+    .galeria{
+        
+        
+        h2{
+            @include titulos;
+            padding: 16px;
+            padding-top:14px;
+            
+        }
+    
+        .fotos{
+            margin-top: -5px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                
+            }
+    
+        }
+    
+    }
+            
+      
+  
+
+      
+}
+@media(min-width:1024px){
+    .seccion3{
+        .contenedor{
+            h2{
+                padding-left:125px;
+            }
+        }
+        .galeria{
+            h2{
+                
+                padding-left: 150px;        
+            }
+        }
+    }
+}

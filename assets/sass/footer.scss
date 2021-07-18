@@ -1,0 +1,72 @@
+@import './fonts.scss';
+
+footer{
+    
+    height: 80px;
+    
+    .copyright{
+        @include parrafos;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        text-align: center;
+        width: 227px;
+        height: 22px;
+        
+        
+
+    }
+    .redes{
+        
+        display: flex;
+        justify-content: space-between;
+        width: 227px;
+        height: 22px;
+        a{
+            color:#060A24;
+        }
+        
+        
+    }
+    @media(min-width:1024px){
+        
+         margin-top: 20px ;   
+        .copyright{
+            text-align: justify;
+            justify-content: flex-start;
+        }
+         .redes{
+                
+            justify-content: flex-end;
+            i{
+                padding-left: 36px;
+                margin-top: 16px;
+            }
+        }
+        
+        
+            
+        
+        
+    }
+
+
+
+}
+@media(min-width:1024px){
+    footer{
+        
+        .copyright{
+            
+            justify-content: flex-start;
+        }
+        .redes{
+            
+            justify-content: flex-end;
+        }
+    }
+    
+        
+    
+    
+}

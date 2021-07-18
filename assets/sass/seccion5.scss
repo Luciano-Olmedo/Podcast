@@ -1,0 +1,66 @@
+@import './fonts.scss';
+
+.seccion5{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    
+ 
+    width: 100%;
+   padding-bottom: 61px;
+    
+    
+    
+
+    h2{
+        @include titulos;
+         padding: 64px 16px 0px 16px;
+         font-size: 36px;
+         color: #FFFFFF;
+         letter-spacing: 0;          
+         line-height: 42px;
+         text-align: center;
+         
+
+    }
+    button{
+        @include parrafos;
+        @extend h2;
+        padding:0px;
+        margin: 16px;
+        background: #00F3BB;
+        width: 288px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #060A24;
+        &:hover{
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        }
+        
+        
+            
+
+    }
+    @media(min-width:1024px){
+        padding-bottom: 61px;
+        padding-top: 149px;
+        clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+        button{
+            margin-top: 34px;
+            
+        }
+
+       
+    }
+       
+                
+       
+           
+    
+    
+    
+    
+         
+
+    
+}
